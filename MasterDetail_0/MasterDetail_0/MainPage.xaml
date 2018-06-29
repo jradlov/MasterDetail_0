@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MasterDetail_0"
+             x:Class="MasterDetail_0.MainPage">
+
+    <MasterDetailPage.Master>
+        <!-- Title is mandatory for theMasterDetailPage.Master content -->
+        <ContentPage Padding="10" BackgroundColor="Azure" Title="Master">
+            <ContentPage.Content>
+                <StackLayout Margin="5,10,5,5">
+                    <Label Text="Master Page" />
+                    <Button Text="Menu Item 1" BackgroundColor="OliveDrab" Clicked="Button_Clicked1" />
+                    <Button Text="Menu Item 2" BackgroundColor="OliveDrab" Clicked="Button_Clicked2" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+
+    <!-- No need to show this section since we're loading Page1() in the constructor -->
+    <!--MasterDetailPage.Detail>
+        <ContentPage Padding="10" BackgroundColor="Coral">
+            <ContentPage.Content>
+                <StackLayout Margin="5,10,5,5">
+                    <Label Text="Detail Page" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail-->
+    
+</MasterDetailPage>
